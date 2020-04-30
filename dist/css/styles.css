@@ -211,11 +211,14 @@ form.example::after {
     }
     .img-fluid{
       object-fit: cover;
-      width:100%;
+      width:200%;
+      border:5px solid rgb(236, 240, 11);
+      text-align: center;
     }
 .navbar{
   background-color: #333
 }
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;

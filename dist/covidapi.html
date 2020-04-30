@@ -1,0 +1,229 @@
+<html>
+    <head>
+        data
+        <style>
+            .w3schools-logo{
+            font-family: Verdana,sans-serif;
+font-size: 15px;
+box-sizing: inherit;
+padding: 0.01em 16px;
+position: relative;
+background-color: #ffffff;
+padding-top: 20px;
+line-height: 50px;
+overflow: hidden;
+z-index: 2;
+height: 100px;
+            }
+            .iblock{
+        font-weight: 400;
+font-size: 14px;
+font-style: normal;
+font-family: 'Roboto', sans-serif;
+outline: 0 none;
+-webkit-box-sizing: border-box;
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+padding: 12px 20px;
+border-radius: 8px;
+margin: 0 8px;
+background: linear-gradient(to bottom,  #a5c9fd 0%,#bde5fc 100%);
+color: #002c57;
+flex-basis: 20%;
+flex-direction: column;
+text-align: center;
+margin-bottom: 0px;
+
+}
+.w3schools-logo{
+box-sizing: inherit;
+background-color: transparent;
+font-family: fontawesome;
+text-decoration: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+font-size: 37px;
+letter-spacing: 3px;
+color: #555555;
+display: block;
+position: relative;
+top: 0;
+width: 100%;
+text-align: center;
+margin: auto;
+}
+.w3-right{
+font-size: 15px;
+line-height: 50px;
+box-sizing: inherit;
+letter-spacing: 4px;
+float: right!important;
+width: 100%;
+text-align: center;
+font-family: 'Segoe UI',Arial,sans-serif;
+}
+
+
+ .ukmn{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.contact,.news,.active,.about{
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+.about {
+  border-right: none;
+}
+
+.contact,.news,.active,.about{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+</style>
+    </head>
+    <body>
+        <div class="wschool">
+            <a class="w3schools-logo notranslate" href="//www.w3schools.com">w3schools<span class="dotcom">.com</span></a>
+            <div class="w3-right w3-hide-small w3-wide toptext" style="font-family:'Segoe UI',Arial,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+          </div>
+          <a href="#" class="fa fa-facebook">f</a>
+        <p id="abc">
+
+        </p>
+        <a href="#" class="fa fa-google"></a>
+        <p id="myP1">This is some text.</p>
+<p id="myP2">This is some text.</p>
+<div class="navbar">
+    <ul class="ukmn">
+      <li ><a class="active" href="#home">Home</a></li>
+      <li ><a class="news" href="#news">News</a></li>
+      <li ><a class="contact" href="#contact">Contact</a></li>
+      <li style="float:right"><a class="about" href="#about">About</a></li>
+    </ul>
+  </div>
+  <a href="https://www.flaticon.com/authors/freepik" title="Freepik"></a>  
+<input type="button" onclick="demoDisplay()" value="Hide text with display property">
+<input type="button" onclick="demoVisibility()" value="Hide text with visibility property">
+        <div class="iblock active-case" >
+            <i></i>
+           <div class="iblock_text">
+               <span class="icount">21632</span>
+               <div class="info_label">Active Cases</div>
+           </div>
+       </div>
+        <script>
+                function demoDisplay() {
+  document.getElementById("myP1").style.display = "none";
+}
+
+function demoVisibility() {
+  document.getElementById("myP2").style.visibility = "hidden";
+}
+                    fetch('https://api.covid19api.com/summary').then((apidata)=>{
+                    //console.log(apidata);
+                    return apidata.json();
+                }).then((acdata)=>{
+                    const gadata=acdata.Countries[101];
+                    
+                    console.log(gadata);
+                    
+                    document.getElementById("abc").innerHTML = gadata;
+                })
+                
+            
+        </script>
+    </body>
+</html>
+
+//////////////
+<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+    <div class="input-group">
+        <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+</form>
+//////////////////////////////////
+
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">////////////LINE NO 20
+    <a class="navbar-brand" href="#mtn">GLOBAL DASHBOARD</a>
+    <a class="navbar-brand" href="#ind">INDIA</a>
+    <a class="navbar-brand" href="#searchhead">SEARCH FOR A COUNTRY</a>
+    <!-- Navbar Search-->
+    
+    <!-- Navbar-->
+    <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Logout</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+
+                          
+
+
+
+
+
+
+
+
+<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+
+
+////////////////
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
