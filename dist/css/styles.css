@@ -183,34 +183,7 @@ form.example::after {
   
   font:italic bold 25px Georgia,serif;
 }
-.w3schools-logo{
-  box-sizing: inherit;
-  background-color: transparent;
-  font-family: fontawesome;
-  text-decoration: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  font-size: 37px;
-  letter-spacing: 3px;
-  color: #555555;
-  display: block;
-  position: relative;
-  top: 10px;
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  
-  }
-  .w3-right{
-    font-size: 15px;
-    line-height: 50px;
-    box-sizing: inherit;
-    letter-spacing: 4px;
-    float: right!important;
-    width: 100%;
-    text-align: center;
-    font-family: 'Segoe UI',Arial,sans-serif;
-    }
+
     .img-fluid{
       object-fit: cover;
       width:200%;
@@ -495,6 +468,7 @@ button::-moz-focus-inner,
   padding: 0;
   border-style: none;
 }
+
 
 input[type=radio],
 input[type=checkbox] {
@@ -10377,3 +10351,32 @@ font:italic bold 50px Georgia,serif;
 font:italic bold 30px Georgia,serif;
  
 }
+.w3schools-logo{
+  box-sizing: inherit;
+  background-color: transparent;
+  font-family: fontawesome;
+  text-decoration: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 37px;
+  letter-spacing: 3px;
+  color: #555555;
+  display: block;
+  position: relative;
+  padding-top: 5%;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  
+  }
+  .w3-right{
+    font-size: 15px;
+    line-height: 50px;
+    box-sizing: inherit;
+    letter-spacing: 4px;
+    float: right!important;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI',Arial,sans-serif;
+    }
